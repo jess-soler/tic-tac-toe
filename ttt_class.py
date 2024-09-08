@@ -113,3 +113,9 @@ class TTT:
 game = TTT()
 game.display_board()
 game.player_move()
+
+
+
+
+#TODO: game pieces, computer player, GUI, win/lose/draw conditions, play again, save game, load game, game history, game statistics, game options, game settings, game menu, game help, game about, game exit
+#TODO: GUI: title, board, status, buttons, menu, dialog, message, input, output, image, sound, video, animation, timer, clock, progress bar, slider, scrollbar, window, screen, display, resolution, fullscreen, theme, style, font, color, size, position, layout, alignment, padding, margin, border, shadow, shape, icon, cursor, tooltip, help, about, exit
