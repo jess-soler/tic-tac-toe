@@ -3,4 +3,4 @@ Tic Tac Toe game Python GUI
 
 TODO:
 
-[ ] convert board to GUI
+[ ]=convert board to GUI
