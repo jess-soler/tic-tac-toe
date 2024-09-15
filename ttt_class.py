@@ -13,7 +13,8 @@ class TTT:
     def __init__(self):
         self.board = self.create_board()
         self.console = Console()
-        self.current_player = 'X'
+        self.human_player = 'X'
+        self.computer_player = 'O'
         
     # create board
     # AI CODE SNIPPET
@@ -79,14 +80,14 @@ class TTT:
             # second character is row
             
             # convert column letter to a column index
-            column_index = columns.index(column_letter)
+            self.column_index = columns.index(column_letter)
             # convert row number to a row index
-            row_index = rows.index(row_number)
+            self.row_index = rows.index(row_number)
         
             # check if selected cell is empty
-            if self.board[row_index][column_index] == ' ':
+            if self.board[self.row_index][self.column_index] == ' ':
                 # place player's mark in the selected cell
-                self.board[row_index][column_index] = self.current_player
+                self.board[self.row_index][self.column_index] = self.human_player
             else:
                 print("Cell is occupied. Try again.")
         
@@ -95,16 +96,14 @@ class TTT:
                 
                 
     
-            
-        # place player's mark in the selected cell
-        # update the board
+    def add_game_piece(self):
         
-       
-        # check for win or draw
-    
-        # switch players
-    
-        # main game loop
+        # place players mark in the selected cell
+        self.board[self.row_index][self.column_index] = self.human_player
+        
+        # display the board
+        self.display_board()
+        
         
 # TESTING:
 # THIS WILL BE MOVED INTO ANOTHER FILE
@@ -113,6 +112,9 @@ class TTT:
 game = TTT()
 game.display_board()
 game.player_move()
+game.add_game_piece()
+
+#TODO: create computer move logic
 
 
 
