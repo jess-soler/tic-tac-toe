@@ -106,7 +106,12 @@ class TTT:
         # display the board
         self.display_board()
         
-        
+    def computer_move(self):
+        pass
+    
+    def check_win(self):
+        pass
+ 
 # TESTING:
 # THIS WILL BE MOVED INTO ANOTHER FILE
 # this code create and display a tic tac toe board
@@ -116,12 +121,7 @@ class TTT:
 # but first I need to convert to GUI and the player clicks on the cell instead of typing it in
 # orrr do I figure out this logic first using rich and then convert?
 
-game = TTT()
-game.display_board()
-game.player_move()
-game.add_game_piece()
-game.player_move()
-game.add_game_piece()
+
 
 #TODO: create computer move logic
 
