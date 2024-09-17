@@ -4,8 +4,10 @@
     Date: 8/30/2024
     Purpose: Class file for tic tac toe game
 """
+
 from rich.console import Console
 from rich.text import Text
+
 # create TTT class
 class TTT:
     
@@ -109,8 +111,15 @@ class TTT:
 # THIS WILL BE MOVED INTO ANOTHER FILE
 # this code create and display a tic tac toe board
 
+# thoughts-- when I set the game up the way I do below, it doens't produce an error when I chose the same cell twice
+# I need to add_game_piece into the player_move function
+# but first I need to convert to GUI and the player clicks on the cell instead of typing it in
+# orrr do I figure out this logic first using rich and then convert?
+
 game = TTT()
 game.display_board()
+game.player_move()
+game.add_game_piece()
 game.player_move()
 game.add_game_piece()
 
