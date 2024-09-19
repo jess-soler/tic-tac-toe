@@ -89,12 +89,15 @@ class TTT:
             # check if selected cell is empty
             if self.board[self.row_index][self.column_index] == ' ':
                 # place player's mark in the selected cell
-                self.board[self.row_index][self.column_index] = self.human_player
+                self.add_game_piece()
+                self.player_move()
             else:
                 print("Cell is occupied. Try again.")
+                self.player_move()
         
         else:
             print("Invalid move. Try again.")
+            self.player_move()
                 
                 
     
@@ -112,9 +115,7 @@ class TTT:
     def check_win(self):
         pass
  
-# TESTING:
-# THIS WILL BE MOVED INTO ANOTHER FILE
-# this code create and display a tic tac toe board
+
 
 # thoughts-- when I set the game up the way I do below, it doens't produce an error when I chose the same cell twice
 # I need to add_game_piece into the player_move function
@@ -124,9 +125,5 @@ class TTT:
 
 
 #TODO: create computer move logic
-
-
-
-
 #TODO: game pieces, computer player, GUI, win/lose/draw conditions, play again, save game, load game, game history, game statistics, game options, game settings, game menu, game help, game about, game exit
 #TODO: GUI: title, board, status, buttons, menu, dialog, message, input, output, image, sound, video, animation, timer, clock, progress bar, slider, scrollbar, window, screen, display, resolution, fullscreen, theme, style, font, color, size, position, layout, alignment, padding, margin, border, shadow, shape, icon, cursor, tooltip, help, about, exit

@@ -16,12 +16,4 @@ game.display_board()
 # player move
 game.player_move()
 
-# display board
-game.display_board()
-
-# player move
-game.player_move()
-
-# display board
-game.display_board()
 
