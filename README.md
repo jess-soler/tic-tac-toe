@@ -25,9 +25,9 @@ The game is designed for a single player (user vs. computer) and includes severa
    cd tic-tac-toe
 
 ## How to Play
--When the game starts, you will be prompted to choose whether to play as X or O.
--The game board consists of a 3x3 grid, and you will take turns with the computer.
--After the game ends, the outcome (win, loss, or tie) will be displayed, and you can choose to play again or quit.
+When the game starts, you will be prompted to choose whether to play as X or O.
+The game board consists of a 3x3 grid, and you will take turns with the computer.
+After the game ends, the outcome (win, loss, or tie) will be displayed, and you can choose to play again or quit.
 
 ## Future Enhancements
 -Improve the AI for more challenging gameplay.
